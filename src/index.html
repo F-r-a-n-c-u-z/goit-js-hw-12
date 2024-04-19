@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <form class="form">
+      <input
+        type="text"
+        id="pictures"
+        placeholder="Enter here..."
+        name="pictures"
+      />
+      <button type="submit">Search</button>
+    </form>
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
+    <ul class="gallery"></ul>
+    <button type="button" class="load-button hide">Load more</button>
+    <span class="loader hide"></span>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
